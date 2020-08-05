@@ -13,6 +13,14 @@ Passos para conectar o banco de dados
       > include ': react-native-sqlite-storage'
       > project(':react-native-sqlite-storage').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sqlite-storage/src/android')
       > ...
+    
+    2.1 - Insira esta linha em ios/Podfile:
+      > pod 'react-native-sqlite-storage', :path => '../node_modules/react-native-sqlite-storage'
+      
+    2.2 - Agora processe o arquivo:
+      > cd ios
+      > pod install
+      > cd ..
       
   3 - Atualizar app gradle build no arquivo android/app/build.gradle:
   
